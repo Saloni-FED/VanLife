@@ -1,10 +1,13 @@
-import { useState } from "react";
+import VansDetail from "./Pages/VansDetail";
 import "./App.css";
-import Header from "./Components/Header";
-import About from "./Components/About";
-import Home from "./Components/Home";
+import Header from "./Pages/Header";
+import About from "./Pages/About";
+import Home from "./Pages/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Footer from "./Components/Footer";
+import Footer from "./Pages/Footer";
+import Vans from "./Pages/Vans"
+import '../src/server'
+
 
 function App() {
   return (
@@ -15,6 +18,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path = '/vans' element={<Vans/>} />
+            <Route path='/vans/id' element = {<VansDetail/>} />
           </Routes>
           <Footer />
         </BrowserRouter>
