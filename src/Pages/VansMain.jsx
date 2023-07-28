@@ -4,8 +4,8 @@ const VansMain = ({ id, name, price, description, imageUrl, type }) => {
   console.log(name + description);
   return (
     <div className="border border-black w-100px">
-  
-      <img src={imageUrl} alt="" srcset="" className="rounded" />
+    <Link to={`/vans/${id}`}> 
+    <img src={imageUrl} alt="" className="rounded" />
       <div className="des">
         <div className="name">
           <h1 className="my-2">{name}</h1>
@@ -15,6 +15,7 @@ const VansMain = ({ id, name, price, description, imageUrl, type }) => {
           <h1>{type}</h1>
         </div>
       </div>
+      </Link>
     </div>
   );
 };

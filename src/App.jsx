@@ -8,7 +8,6 @@ import Footer from "./Pages/Footer";
 import Vans from "./Pages/Vans"
 import '../src/server'
 
-
 function App() {
   return (
     <>
@@ -19,7 +18,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path = '/vans' element={<Vans/>} />
-            <Route path='/vans/id' element = {<VansDetail/>} />
+            <Route path='/vans/:id' element = {<VansDetail/>} />
           </Routes>
           <Footer />
         </BrowserRouter>
