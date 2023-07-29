@@ -3,7 +3,7 @@ const VansMain = ({ id, name, price, description, imageUrl, type }) => {
   console.log(id);
   console.log(name + description);
   return (
-    <div className="border border-black w-100px">
+    <div className=" w-100px">
     <Link to={`/vans/${id}`}> 
     <img src={imageUrl} alt="" className="rounded" />
       <div className="des">
